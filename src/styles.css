@@ -12,6 +12,8 @@
   --warn-text:#92400e;
   --danger:#fee2e2;
   --danger-text:#991b1b;
+  --neutral:#e2e8f0;
+  --neutral-text:#334155;
 }
 *{box-sizing:border-box}
 body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--text)}
@@ -55,10 +57,21 @@ th{font-size:13px;color:var(--muted);font-weight:700}
 .badge-ok{background:var(--ok);color:var(--ok-text)}
 .badge-warn{background:var(--warn);color:var(--warn-text)}
 .badge-danger{background:var(--danger);color:var(--danger-text)}
+.badge-neutral{background:var(--neutral);color:var(--neutral-text)}
 .search-box{display:flex;align-items:center;gap:8px;max-width:420px;border:1px solid var(--border);border-radius:12px;padding:0 12px;margin:20px}
 .search-box input{border:none;outline:none;padding-left:0}
+.search-box-tight{margin:0;max-width:520px}
 .warning-box{display:grid;gap:8px;border:1px solid #fde68a;background:#fffbeb;border-radius:16px;padding:16px}
 .warning-label{display:flex;align-items:center;gap:8px}
+.feedback-banner{display:flex;justify-content:space-between;align-items:center;gap:12px;border-radius:18px;padding:14px 16px;border:1px solid var(--border)}
+.feedback-success{background:#ecfdf5;border-color:#bbf7d0;color:#166534}
+.feedback-error{background:#fef2f2;border-color:#fecaca;color:#991b1b}
+.feedback-content{display:flex;align-items:center;gap:10px;font-weight:600}
+.feedback-close{font-size:22px;color:inherit}
+.inline-summary{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.inline-summary span{display:inline-flex;align-items:center;gap:6px}
+.input-with-icon{display:flex;align-items:center;gap:8px;border:1px solid var(--border);border-radius:12px;padding:0 12px;background:#fff}
+.input-with-icon input{border:none;padding-left:0}
 .modal-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.45);display:flex;align-items:center;justify-content:center;padding:20px;z-index:50}
 .modal-card{width:min(100%,560px);background:#fff;border-radius:20px;border:1px solid var(--border);padding:20px}
 .modal-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
